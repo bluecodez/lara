@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('welcome');
 });
+
+Route::get('/Hello', function () {
+    return 'Hello World!';
+});
+
+Route::get('hello','Hello@index');
+
+Route::get('/hello/{name}','Hello@show');
